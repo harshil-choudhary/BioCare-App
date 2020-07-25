@@ -1,0 +1,135 @@
+import {StyleSheet, Dimensions} from 'react-native';
+const {width, height} = Dimensions.get('window');
+
+export default StyleSheet.create({
+  wrapper: {
+    width,
+    height,
+    display: 'flex',
+    justifyContent: 'flex-start',
+  },
+  scrollWrapper: {
+    width,
+    display: 'flex',
+    justifyContent: 'flex-start',
+  },
+  bgImage: {
+    width,
+    height,
+    resizeMode: 'cover',
+    justifyContent: 'center',
+    display: 'flex',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+  },
+  upperCont: {
+    width: '100%',
+    height: height * 0.1,
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'flex-end',
+    // backgroundColor: 'maroon',
+  },
+  arrowCont: {
+    width: width * 0.15,
+    height: height * 0.05,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginLeft: width * 0.05,
+    // backgroundColor: 'pink',
+  },
+  logoCont: {
+    width: '80%',
+    height: height * 0.35,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    // backgroundColor: 'pink',
+  },
+  textCont: {
+    width: '80%',
+    height: height * 0.1,
+    marginTop: height * 0.05,
+    justifyContent: 'center',
+    // backgroundColor: 'maroon',
+  },
+  heading: {
+    fontFamily: 'Helvetica Neue',
+    fontStyle: 'normal',
+    fontWeight: 'bold',
+    fontSize: width * 0.055,
+    marginTop: height * 0.01,
+    color: '#FFFFFF',
+  },
+  subText: {
+    fontFamily: 'Helvetica Neue',
+    fontStyle: 'normal',
+    fontWeight: '500',
+    fontSize: width * 0.032,
+    marginTop: height * 0.008,
+    color: '#FFFFFF',
+  },
+  numBtnCont: {
+    width: '80%',
+    height: height * 0.3,
+    display: 'flex',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    // backgroundColor: 'lightgreen',
+  },
+  otpCont: {
+    width: '100%',
+    height: height * 0.1,
+    // backgroundColor: 'silver',
+  },
+
+  underlineStyleBase: {
+    width: width * 0.16,
+    height: height * 0.09,
+    borderWidth: 0,
+    borderRadius: 15,
+    shadowColor: '#000',
+    shadowOffset: {width: 0, height: 1},
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    elevation: 2,
+    backgroundColor: '#FFFFFF',
+    fontSize: width * 0.055,
+    color: '#000000',
+    fontWeight: 'bold',
+  },
+  //   underlineStyleHighLighted: {
+
+  //   },
+
+  resendCont: {
+    width: '100%',
+    height: height * 0.03,
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    // backgroundColor: 'pink',
+  },
+
+  btnCont: {
+    width: '105%',
+    height: height * 0.1,
+    justifyContent: 'center',
+    // backgroundColor: 'maroon',
+  },
+  btn: {
+    // width: '100%',
+    elevation: 5,
+    borderWidth: 0,
+    borderColor: '#ffffff',
+  },
+  socialText: {
+    fontFamily: 'Helvetica Neue',
+    fontStyle: 'normal',
+    fontWeight: '500',
+    fontSize: width * 0.037,
+    color: '#FFFFFF',
+  },
+});

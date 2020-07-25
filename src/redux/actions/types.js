@@ -1,0 +1,1 @@
+export const MOBILE_ENTERED = 'mobile_entered'

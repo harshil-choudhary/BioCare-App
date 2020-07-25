@@ -1,0 +1,96 @@
+import {StyleSheet, Dimensions} from 'react-native';
+const {width, height} = Dimensions.get('window');
+
+export default StyleSheet.create({
+  container: {
+    width,
+    height,
+    position: 'relative',
+    backgroundColor: 'pink',
+  },
+  wrapper: {
+    position: 'absolute',
+    left: '0%',
+    right: '0%',
+    top: '-0.23%',
+    bottom: '0%',
+    backgroundColor: '#5588e7',
+    marginTop: 0,
+  },
+  filterContainer: {
+    margin: 30,
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  filterTextImgWrapper: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  filterText: {
+    color: '#fff',
+    fontSize: width * 0.042,
+    fontWeight: 'bold',
+    marginLeft: 10,
+  },
+  clearText: {
+    color: '#fff',
+    fontWeight: '400',
+    fontSize: width * 0.033,
+  },
+  cardContainer: {
+    backgroundColor: '#fff',
+    borderRadius: 5,
+    width: '95%',
+    margin: 10,
+    padding: 15,
+    shadowColor: 'rgba(1,1,1,1)',
+    elevation: 5,
+  },
+  cardHeading: {
+    marginLeft: 5,
+    color: '#898A8F',
+    fontSize: width * 0.035,
+    fontFamily: 'Helvetica Neue',
+    fontStyle: 'normal',
+  },
+  bottomBtnContainer: {
+    position: 'absolute',
+    right: 0,
+    bottom: 30,
+  },
+  applyBtnContainer: {
+    width: '100%',
+    margin: 10,
+    borderRadius: 40,
+    padding: 15,
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    right: '120%',
+  },
+  btnText: {
+    color: '#fff',
+    fontSize: width * 0.042,
+    fontWeight: '400',
+  },
+  closeContainer: {
+    position: 'absolute',
+    bottom: 0,
+    right: 0,
+    marginHorizontal: 12,
+    backgroundColor: '#ffffff',
+    borderRadius: 50,
+    padding: 15,
+    elevation: 4,
+    shadowColor: 'rgba(0, 0, 0, 0.25)',
+    marginBottom: 5,
+  },
+  radioBtnContainer: {
+    marginTop: 10,
+  },
+});
